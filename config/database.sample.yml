@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  host: localhost
+  pool: 5
+  username: postgres
+  password: secret
+
+development:
+  <<: *default
+  database: example_blog_development
+
+test:
+  <<: *default
+  database: example_blog_test
+
+production:
+  <<: *default
+  database: example_blog
