@@ -18,12 +18,8 @@ gem "uglifier"
 # gem "unicorn"
 
 group :development do
-  # Annotate ActiveRecord models
-  gem "annotate", "~> 2.6.6", require: false
   # A Ruby static code analyzer, based on the community Ruby style guide.
   gem "rubocop", require: false
-  # Code smell detector for Ruby
-  gem "reek", require: false
 end
 
 group :development, :test do
